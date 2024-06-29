@@ -1,0 +1,74 @@
+
+@font-face {
+  font-family: "digital-7";
+  src:
+    url("/digital-7.ttf") format("opentype"),
+    
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2D6B82;
+    margin: 0;
+}
+
+.stopwatch {
+    text-align: center;
+    background: #776174;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+#display {
+    font-family: digital-7;
+    font-size: 72px;
+    margin-bottom: 20px;
+    color: fff;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #E5DFA2;
+    font-size: 18px;
+    cursor: pointer;
+}
+.controls button:hover {
+    background-color: aliceblue;
+}
+#laps {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+#laps li {
+    background: #eee;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#export, #fullscreen {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #efe;
+    font-size: 18px;
+    cursor: pointer;
+}
+#export:hover, #fullscreen:hover{
+    background-color: aquamarine;
+}
